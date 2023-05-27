@@ -8,7 +8,7 @@ public class LoginService {
     @Autowired
     private LoginDAO loginDAO;
 
-    public boolean loginCheck(LoginDTO login) throws MemberNotFoundException, LoginFailedException {
+    public void loginCheck(LoginDTO login) throws MemberNotFoundException, LoginFailedException {
         User user = loginDAO.selectUser(login.getId());
 
         if(user == null) {
@@ -18,7 +18,6 @@ public class LoginService {
 
         if(login.getPassword().equals(user.getPassword())) {
             System.out.println("Login Success!!");
-            return true;
         } else {
             System.out.println("Login Failed");
             throw new LoginFailedException();

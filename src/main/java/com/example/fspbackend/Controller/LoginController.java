@@ -15,10 +15,7 @@ public class LoginController {
     private LoginService logSvc;
 
     @PostMapping
-    public void login(@RequestBody LoginDTO login, HttpServletRequest request) throws MemberNotFoundException, LoginFailedException {
-        if(logSvc.loginCheck(login)) {  //세션 공부, 구현 필요
-            HttpSession session = request.getSession();
-            session.setMaxInactiveInterval(5);
-        }
+    public void login(@RequestBody LoginDTO login) throws MemberNotFoundException, LoginFailedException {
+        logSvc.loginCheck(login);
     }
 }

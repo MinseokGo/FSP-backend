@@ -14,9 +14,13 @@ public class LoginDAO {
     @Autowired
     MongoTemplate mongoTemplate;
 
-    public User selectUser(String id) {
+    public User selectUser(String id) throws MemberNotFoundException {
         Query query = new Query(Criteria.where("userId").is(id));
         List<User> userList = mongoTemplate.find(query, User.class);
+
+        if(userList.size() <= 0) {
+            throw new MemberNotFoundException();
+        }
 
         return userList.get(0);
     }

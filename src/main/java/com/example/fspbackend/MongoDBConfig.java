@@ -22,4 +22,3 @@ public class MongoDBConfig {
         return new MongoTemplate(mongoDatabaseFactory());
     }
 }
-
