@@ -1,6 +1,6 @@
 package com.example.fspbackend.Controller;
 
-import com.example.fspbackend.PostDTO;
+import com.example.fspbackend.DTO.PostDTO;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
