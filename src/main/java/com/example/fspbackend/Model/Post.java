@@ -13,10 +13,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Post {
     @Id
     private String postID;
+    private String postNum;
     private String postTitle;
     private String postContent;
-    private String shareShop;
+    private String shareMenu;
     private String shareTime;
     private String sharePlace;
     private String sharePeople;
+    private String shareShop;
+    private String tip;
 }

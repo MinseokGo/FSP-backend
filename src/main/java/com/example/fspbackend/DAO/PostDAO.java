@@ -27,5 +27,17 @@ public class PostDAO {
         return postList;
     }
 
+    public Post selectPost(String postNum) throws PostNotFoundException {
+        Query query = new Query(Criteria.where("postNum").is(postNum));
+        List<Post> post = mongoTemplate.find(query, Post.class);
+
+        if(post.size() <= 0) {
+            System.out.println("Not exist Post");
+            throw new PostNotFoundException();
+        }
+
+        return post.get(0);
+    }
+
     //게시물 클릭 시 게시물 정보 메서드 구현//
 }

@@ -14,7 +14,7 @@ public class LoginService {
     private UserDAO userDAO;
 
     public void loginCheck(LoginDTO login) throws MemberNotFoundException, LoginFailedException {
-        User user = userDAO.selectUser(login.getId());
+        User user = userDAO.selectUser(login.getUserId());
 
         if(user == null) {
             System.out.println("Not exist User!!");

@@ -1,14 +1,23 @@
 package com.example.fspbackend.Controller;
 
+import com.example.fspbackend.DTO.ViewDTO;
 import com.example.fspbackend.DTO.testDTO;
+import com.example.fspbackend.Exception.PostNotFoundException;
+import com.example.fspbackend.Service.ViewPostService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "rest/api/view")
 @CrossOrigin(origins = "http://localhost:8080")
+@RequestMapping(value = "rest/api/view")
 public class ViewPostController {
+    @Autowired
+    private ViewPostService viewSvc;
+
     @PostMapping
-    public void post(@RequestParam(required = false, value = "not parameter") String id) {
-        System.out.println(id);
+    public ViewDTO view(@RequestBody testDTO test) throws PostNotFoundException {
+        System.out.println(test.getPostNum());
+
+        return viewSvc.view(test.getPostNum());
     }
 }

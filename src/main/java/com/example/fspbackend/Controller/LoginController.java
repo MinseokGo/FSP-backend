@@ -15,7 +15,9 @@ public class LoginController {
     private LoginService logSvc;
 
     @PostMapping
-    public void login(@RequestBody LoginDTO login) throws MemberNotFoundException, LoginFailedException {
+    public int login(@RequestBody LoginDTO login) throws MemberNotFoundException, LoginFailedException {
         logSvc.loginCheck(login);
+
+        return 4;
     }
 }

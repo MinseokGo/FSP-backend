@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 public class ToHomePageDTO {
     //private String address;
-    private String postId;
+    private String postNum;
     private String title;
     private String place;
     private String time;

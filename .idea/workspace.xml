@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8237ffa2-dbc3-4ad0-8185-193fabf44e20" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DTO/testDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/ViewPostService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/Controller/TestController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../food-project-test/src/main/java/com/example/foodprojecttest/Controller/TestController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../food-project-test/src/main/java/com/example/foodprojecttest/User.java" afterDir="false" />
@@ -51,12 +51,29 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/HomePageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/ViewPostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/ViewPostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HomePageController.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HomePageService.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DAO/PostDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DAO/PostDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DTO/LoginDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DTO/LoginDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DTO/ToHomePageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DTO/ToHomePageDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DTO/testDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DTO/testDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Model/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Model/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Service/HomePageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Service/HomePageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/SetLocController.class.uniqueId1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ViewPostController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ViewPostController.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/ViewPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/ViewPostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DAO/PostDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DAO/PostDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DTO/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DTO/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DTO/ToHomePageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DTO/ToHomePageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DTO/testDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DTO/testDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/HomePageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/HomePageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/LoginService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +151,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.fspbackend.Controller" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="FspBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="FSP-backend.main" />
@@ -166,7 +188,7 @@
       <workItem from="1685253602525" duration="626000" />
       <workItem from="1685254256232" duration="6615000" />
       <workItem from="1685261343956" duration="3980000" />
-      <workItem from="1685265767435" duration="1784000" />
+      <workItem from="1685265767435" duration="14097000" />
     </task>
     <servers />
   </component>
