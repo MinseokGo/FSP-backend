@@ -1,5 +1,6 @@
 package com.example.fspbackend.DAO;
 
+import com.example.fspbackend.Exception.PostNotFoundException;
 import com.example.fspbackend.Model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -14,13 +15,13 @@ public class PostDAO {
     @Autowired
     MongoTemplate mongoTemplate;
 
-    public List<Post> selectAllPost() {
-        Query query = new Query(Criteria.where("postTitle").is("노나묵자현"));
+    public List<Post> selectAllPost() throws PostNotFoundException {
+        Query query = new Query();
         List<Post> postList = mongoTemplate.find(query, Post.class);
         if(postList.size() <= 0) {
             System.out.println("Not exist post!!");
 
-            return null;
+            throw new PostNotFoundException();
         }
 
         return postList;

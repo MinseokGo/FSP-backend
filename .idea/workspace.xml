@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8237ffa2-dbc3-4ad0-8185-193fabf44e20" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Exception/PostNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Exception/ToHomePageDTOException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/Controller/TestController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../food-project-test/src/main/java/com/example/foodprojecttest/Controller/TestController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../food-project-test/src/main/java/com/example/foodprojecttest/User.java" afterDir="false" />
@@ -47,52 +49,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/ChatDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/ChatListDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/ChatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/ChatListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/ChatListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/HomePageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/HomePageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/PayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/PayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/SetLocController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/SetLocController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/ViewPostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/ViewPostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/WritePostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/Controller/WritePostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/FspBackendApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/FspBackendApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/LoginDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/LoginDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/LoginFailedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/MemberNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/MongoDBConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/PayDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/PostDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/PostListDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/SetLocDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/ViewDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LoginDAO.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/LoginService.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DAO/PostDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/fspbackend/DAO/PostDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/ChatDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/ChatListDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/ChatListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/ChatListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/WritePostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Controller/WritePostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/LoginDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/LoginDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/LoginFailedException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/LoginService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/MemberNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/MongoDBConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/PayDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/PostDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/PostListDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/SetLocDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/ViewDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DAO/PostDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DAO/PostDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DTO/ToHomePageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/DTO/ToHomePageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/HomePageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/HomePageService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +164,7 @@
       <workItem from="1685168033585" duration="20045000" />
       <workItem from="1685253602525" duration="626000" />
       <workItem from="1685254256232" duration="6615000" />
-      <workItem from="1685261343956" duration="1141000" />
+      <workItem from="1685261343956" duration="1911000" />
     </task>
     <servers />
   </component>

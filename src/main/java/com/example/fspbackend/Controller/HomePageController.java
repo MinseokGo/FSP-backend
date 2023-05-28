@@ -1,6 +1,8 @@
 package com.example.fspbackend.Controller;
 
 import com.example.fspbackend.DTO.ToHomePageDTO;
+import com.example.fspbackend.Exception.PostNotFoundException;
+import com.example.fspbackend.Exception.ToHomePageDTOException;
 import com.example.fspbackend.Service.HomePageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -18,7 +20,7 @@ public class HomePageController {
     private HomePageService homeSvc;
 
     @GetMapping
-    public List<ToHomePageDTO> home() {
+    public List<ToHomePageDTO> home() throws PostNotFoundException, ToHomePageDTOException {
         return homeSvc.homePageLoad();
     }
 }
