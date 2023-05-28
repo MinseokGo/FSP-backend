@@ -33,19 +33,22 @@ public class HomePageService {
         List<ToHomePageDTO> toHomePageDTO = new ArrayList<>(postList.size());
 
         for(int i=0; i<postList.size(); i++) {
+            //Shop 이미지 로드를 위한 샵 객체 로드
             Shop shop = shopDAO.selectShop(postList.get(i).getShareShop());
+            //프론트로 전송할 DTO객체를 초기화 함
             ToHomePageDTO homePageDTO = new ToHomePageDTO(
-                    postList.get(i).getPostTitle(), postList.get(i).getSharePlace(), postList.get(i).getShareTime(),
-                    postList.get(i).getSharePeople(), shop.getShopImg());
-
+                    postList.get(i).getPostID(), postList.get(i).getPostTitle(), postList.get(i).getSharePlace(),
+                    postList.get(i).getShareTime(), postList.get(i).getSharePeople(), shop.getShopImg());
+            //초기화 된 DTO 객체를 리스트화 함
             toHomePageDTO.add(homePageDTO);
         }
+
         if(toHomePageDTO.size() <= 0) {
             System.out.println("Do not get ToHomePageDTO");
 
             throw new ToHomePageDTOException();
         }
-        
+
         return toHomePageDTO;
     }
 }

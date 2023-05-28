@@ -1,15 +1,13 @@
 package com.example.fspbackend.Controller;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "rest/api/view")
 @CrossOrigin(origins = "http://localhost:8080")
 public class ViewPostController {
-    /*@GetMapping
-    public viewDTO post() {
-        return new viewDTO();
-    }*/
+    @PostMapping
+    public void post(@RequestParam String id) {
+        System.out.println(id);
+    }
 }
