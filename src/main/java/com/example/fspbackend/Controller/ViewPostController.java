@@ -16,8 +16,6 @@ public class ViewPostController {
 
     @PostMapping
     public ViewDTO view(@RequestBody testDTO test) throws PostNotFoundException {
-        System.out.println(test.getPostNum());
-
-        return viewSvc.view(test.getPostNum());
+        return viewSvc.view(test.getPostId());
     }
 }

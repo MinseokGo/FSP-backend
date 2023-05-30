@@ -6,6 +6,6 @@ import lombok.NoArgsConstructor;
 
 @Getter
 public class testDTO {
-    private String postNum;
+    private String postId;
 
 }

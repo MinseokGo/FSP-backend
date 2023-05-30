@@ -11,6 +11,15 @@ public class Shop {
     private String shopMenu;
     private String shopAddress;
     private String shopImg;
+    private String shopTip;
+
+    public String getShopTip() {
+        return shopTip;
+    }
+
+    public void setShopTip(String shopTip) {
+        this.shopTip = shopTip;
+    }
 
     public String getShopImg() {
         return shopImg;

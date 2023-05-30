@@ -37,7 +37,7 @@ public class HomePageService {
             Shop shop = shopDAO.selectShop(postList.get(i).getShareShop());
             //프론트로 전송할 DTO객체를 초기화 함
             ToHomePageDTO homePageDTO = new ToHomePageDTO(
-                    postList.get(i).getPostNum(), postList.get(i).getPostTitle(), postList.get(i).getSharePlace(),
+                    postList.get(i).getPostID(), postList.get(i).getPostTitle(), postList.get(i).getSharePlace(),
                     postList.get(i).getShareTime(), postList.get(i).getSharePeople(), shop.getShopImg());
             //초기화 된 DTO 객체를 리스트화 함
             toHomePageDTO.add(homePageDTO);

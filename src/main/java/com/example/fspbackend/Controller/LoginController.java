@@ -4,6 +4,8 @@ import com.example.fspbackend.DTO.LoginDTO;
 import com.example.fspbackend.Exception.LoginFailedException;
 import com.example.fspbackend.Exception.MemberNotFoundException;
 import com.example.fspbackend.Service.LoginService;
+import com.example.fspbackend.jwt.JwtTokenProvider;
+import io.jsonwebtoken.Jwt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,11 +15,13 @@ import org.springframework.web.bind.annotation.*;
 public class LoginController {
     @Autowired
     private LoginService logSvc;
+    @Autowired
+    private JwtTokenProvider jwtTokenProvider;
 
     @PostMapping
-    public int login(@RequestBody LoginDTO login) throws MemberNotFoundException, LoginFailedException {
+    public String login(@RequestBody LoginDTO login) throws MemberNotFoundException, LoginFailedException {
         logSvc.loginCheck(login);
 
-        return 4;
+        return jwtTokenProvider.makeJwtToken(login);
     }
 }

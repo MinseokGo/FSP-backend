@@ -1,5 +1,6 @@
 package com.example.fspbackend.DAO;
 
+import com.example.fspbackend.DTO.PostDTO;
 import com.example.fspbackend.Exception.PostNotFoundException;
 import com.example.fspbackend.Model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,15 +21,14 @@ public class PostDAO {
         List<Post> postList = mongoTemplate.find(query, Post.class);
         if(postList.size() <= 0) {
             System.out.println("Not exist post!!");
-
             throw new PostNotFoundException();
         }
 
         return postList;
     }
 
-    public Post selectPost(String postNum) throws PostNotFoundException {
-        Query query = new Query(Criteria.where("postNum").is(postNum));
+    public Post selectPost(String postId) throws PostNotFoundException {
+        Query query = new Query(Criteria.where("_id").is(postId));
         List<Post> post = mongoTemplate.find(query, Post.class);
 
         if(post.size() <= 0) {
@@ -39,5 +39,14 @@ public class PostDAO {
         return post.get(0);
     }
 
-    //게시물 클릭 시 게시물 정보 메서드 구현//
+    public List<Post> selectPostTitle(String postAuth) {
+        Query query = new Query(Criteria.where("postAuth").is(postAuth));
+        List<Post> postList = mongoTemplate.find(query, Post.class);
+
+        return postList;
+    }
+
+    public void postInsert(Post post) {
+        mongoTemplate.insert(post, "post");
+    }
 }

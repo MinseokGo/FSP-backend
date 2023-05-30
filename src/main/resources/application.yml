@@ -11,3 +11,7 @@ spring:
       password: 111122
       uri: mongodb://localhost:27017/login
 
+jwt:
+  issuer: rhalstjr1999@naver.com
+  secretKey: rhalstjrrhalstjrrhalstjrrhalstjr
+  tokenPrefix: Bearer
