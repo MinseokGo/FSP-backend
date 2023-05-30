@@ -5,11 +5,7 @@ server:
 spring:
   data:
     mongodb:
-      host: localhost
-      database: login
-      username: minseokgo
-      password: 111122
-      uri: mongodb://localhost:27017/login
+      uri: mongodb+srv://minseokgo:111122@food-share-project.crztw7o.mongodb.net/food?retryWrites=true&w=majority
 
 jwt:
   issuer: rhalstjr1999@naver.com

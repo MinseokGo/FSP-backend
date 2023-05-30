@@ -21,7 +21,7 @@ public class JwtTokenProvider {
                 //jwt의 body 설정
                 .setIssuer(jwtProperties.getIssuer())   //토큰 발급자 설정
                 .setIssuedAt(now)   //토큰 발급 시간 설정
-                .setExpiration(new Date(now.getTime() + Duration.ofMinutes(30).toMillis())) //토큰 만료 시간 설정
+                .setExpiration(new Date(now.getTime() + Duration.ofMinutes(1).toMillis())) //토큰 만료 시간 설정
                 .claim("userId", loginDTO.getUserId())  //비공개 클레임
                 //
                 .signWith(SignatureAlgorithm.HS256, jwtProperties.getSecretKey())   //서명
