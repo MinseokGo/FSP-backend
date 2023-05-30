@@ -1,6 +1,5 @@
 package com.example.fspbackend.DAO;
 
-import com.example.fspbackend.DTO.PostDTO;
 import com.example.fspbackend.Exception.PostNotFoundException;
 import com.example.fspbackend.Model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
