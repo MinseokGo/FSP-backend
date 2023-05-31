@@ -41,10 +41,18 @@
       <change afterPath="$PROJECT_DIR$/../spring-basics/src/main/java/spring/WrongIdPasswordException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-basics/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-basics/src/main/webapp/index.jsp" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/UserInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/WritePostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/WritePostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/jwt/JwtTokenProvider.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +182,7 @@
       <workItem from="1685253602525" duration="626000" />
       <workItem from="1685254256232" duration="6615000" />
       <workItem from="1685261343956" duration="3980000" />
+<<<<<<< Updated upstream
       <workItem from="1685265767435" duration="14097000" />
       <workItem from="1685362708081" duration="348000" />
       <workItem from="1685435711882" duration="5955000" />
@@ -182,6 +191,9 @@
       <workItem from="1685450271028" duration="2181000" />
       <workItem from="1685519946934" duration="1576000" />
       <workItem from="1685523538774" duration="1060000" />
+=======
+      <workItem from="1685265767435" duration="14735000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
