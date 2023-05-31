@@ -2,7 +2,6 @@ package com.example.fspbackend.Service;
 
 import com.example.fspbackend.DAO.PostDAO;
 import com.example.fspbackend.DAO.UserDAO;
-import com.example.fspbackend.DTO.ToHomePageDTO;
 import com.example.fspbackend.DTO.ToUserInfoDTO;
 import com.example.fspbackend.Exception.MemberNotFoundException;
 import com.example.fspbackend.Model.Post;
@@ -23,7 +22,7 @@ public class UserInfoService {
     private JwtTokenProvider jwtTokenProvider;
 
     public ToUserInfoDTO selectUserInfo(String token) throws MemberNotFoundException {
-        User user = userDAO.selectUser(jwtTokenProvider.getUserIdFromJWT(token));
+        User user = userDAO.selectUser(jwtTokenProvider.getUserIdFromJwt(token));
         List<Post> post = postDAO.selectPostTitle(user.getNickname());
 
         String[] postTitle = new String[post.size()];

@@ -28,7 +28,7 @@ public class JwtTokenProvider {
                 .compact(); //토큰 생성
     }
 
-    public String getUserIdFromJWT(String token) {
+    public String getUserIdFromJwt(String token) {
         Claims claims = Jwts.parser()
                 .setSigningKey(jwtProperties.getSecretKey())
                 .parseClaimsJws(token)

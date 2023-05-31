@@ -21,7 +21,7 @@ public class WritePostService {
     private JwtTokenProvider jwtTokenProvider;
 
     public void writePost(String token, PostDTO postDTO) throws MemberNotFoundException {
-        User user = userDAO.selectUser(jwtTokenProvider.getUserIdFromJWT(token));
+        User user = userDAO.selectUser(jwtTokenProvider.getUserIdFromJwt(token));
         Post post = new Post();
         Shop shop = new Shop();
 

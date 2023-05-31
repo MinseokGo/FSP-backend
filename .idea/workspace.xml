@@ -42,6 +42,8 @@
       <change afterPath="$PROJECT_DIR$/../spring-basics/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spring-basics/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/UserInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/WritePostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/Service/WritePostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fspbackend/jwt/JwtTokenProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +181,7 @@
       <workItem from="1685449946440" duration="278000" />
       <workItem from="1685450271028" duration="2181000" />
       <workItem from="1685519946934" duration="1576000" />
-      <workItem from="1685523538774" duration="58000" />
+      <workItem from="1685523538774" duration="1060000" />
     </task>
     <servers />
   </component>
