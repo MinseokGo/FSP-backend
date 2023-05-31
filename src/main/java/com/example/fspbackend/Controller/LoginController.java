@@ -5,7 +5,6 @@ import com.example.fspbackend.Exception.LoginFailedException;
 import com.example.fspbackend.Exception.MemberNotFoundException;
 import com.example.fspbackend.Service.LoginService;
 import com.example.fspbackend.jwt.JwtTokenProvider;
-import io.jsonwebtoken.Jwt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -10,4 +10,4 @@ spring:
 jwt:
   issuer: rhalstjr1999@naver.com
   secretKey: rhalstjrrhalstjrrhalstjrrhalstjr
-  tokenPrefix: Bearer
+  tokenPrefix: Bearer 
